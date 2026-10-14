@@ -1,0 +1,19 @@
+Como testar:
+Ao correres a aplicação principal (Main), escolhe a opção 6 - Carregar estado e escreve estado83.dat.
+
+O que o estado estado83.dat contém:
+Casa Principal: ID C1 (Casa do Ponto 8.3) com 3 divisões (D1 Sala, D2 Quarto, D3 Cozinha) e vários dispositivos registados (Lâmpadas, Termostato e Coluna de Som).
+2 Automações:
+A1 (ConsumoTotalCasa): Caso o consumo total ultrapasse os 100 Wh, as luzes da sala e do quarto são desligadas.
+A2 (TemperaturaAbaixo): Caso a temperatura detetada baixe os 18ºC, o termostato liga-se.
+4 Escalonamentos:
+E1 (08:00): Liga a lâmpada do quarto para o despertar.
+E2 (09:00): Desliga todas as luzes da casa.
+E3 (19:00): Liga a lâmpada da sala ao entardecer.
+E4 (23:00): Desliga luzes, som e o termostato para poupança noturna.
+4 Cenários:
+sair de casa: Desliga todas as lâmpadas e colunas de som.
+jantar com amigos: Liga as luzes da sala e a coluna de som.
+deitar: Desliga todas as luzes da sala, do quarto e a coluna de som.
+acordar: Liga a luz do quarto e o termostato da sala.
+Podes aceder ao menu 4 - Simulação e Cenários para ver o relógio, simular o avanço do tempo (para ativar os escalonamentos) e executar os cenários listados para a casa C1!
